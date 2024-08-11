@@ -1,0 +1,23 @@
+
+footer{
+    position: fixed;
+    bottom:0;
+    color:white;
+    padding:25px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: var(--div-color);
+    width: 87%;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:0;
+    padding-left: 0;
+}
+footer img{
+    width: 25px;
+}
+a{text-decoration: none;}

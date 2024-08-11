@@ -1,0 +1,89 @@
+
+.finance-card {
+    background:linear-gradient(45deg , rgb(236, 4, 4), rgb(226, 205, 43));
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+}
+
+.card-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.balance {
+    font-size: 2em;
+    margin: 0;
+}
+
+.transactions {
+    padding: 20px;
+}
+
+.transactions h2 {
+    margin-top: 0;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.finance-card .front .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.finance-card .front .image img{
+    height: 50px;
+}
+.finance-card .front .card-number-box{
+    padding:30px 0;
+    font-size: 22px;
+    color:#fff;
+}
+
+.finance-card .front{
+    padding: 20px;
+}
+
+.finance-card .front .flexbox{
+    display: flex;
+}
+
+.finance-card .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.finance-card .front .flexbox .box{
+    font-size: 15px;
+    color:#fff;
+}

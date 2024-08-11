@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <style>
+        /* styles.css */
+
+/* Le modal (popup) */
+.modal {
+    display: none; /* Caché par défaut */
+    position: fixed; /* Reste en place */
+    z-index: 1; /* Au-dessus du contenu */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largeur totale */
+    height: 100%; /* Hauteur totale */
+    overflow: auto; /* Scroll si nécessaire */
+    background-color: rgb(0,0,0); /* Couleur de fond noire */
+    background-color: rgba(0,0,0,0.4); /* Opacité */
+}
+
+/* Contenu du modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% du haut et centré */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largeur du modal */
+    max-width: 500px; /* Largeur max du modal */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Le bouton pour fermer le modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Changer la couleur du bouton de fermeture au survol */
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Bouton pour ouvrir le popup -->
+    <button id="openModalBtn">Ouvrir le Popup</button>
+
+    <!-- Le popup -->
+    <div id="myModal" class="modal">
+        <!-- Contenu du popup -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Titre du Popup</h2>
+            <p>Voici un exemple de popup.</p>
+        </div>
+    </div>
+
+    <script>
+        // script.js
+
+// Récupérer les éléments
+var modal = document.getElementById("myModal");
+var openModalBtn = document.getElementById("openModalBtn");
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Ouvrir le modal lorsque l'utilisateur clique sur le bouton
+openModalBtn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Fermer le modal lorsque l'utilisateur clique sur la croix
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Fermer le modal si l'utilisateur clique en dehors du contenu
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+    </script>
+</body>
+</html>

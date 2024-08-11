@@ -1,0 +1,40 @@
+
+.modal {
+    display: none; /* Caché par défaut */
+    position: fixed; /* Reste en place */
+    z-index: 1; /* Au-dessus du contenu */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largeur totale */
+    height: 100%; /* Hauteur totale */
+    overflow: auto; /* Scroll si nécessaire */
+    background-color: rgb(0,0,0); /* Couleur de fond noire */
+    background-color: rgba(0,0,0,0.4); /* Opacité */
+}
+
+/* Contenu du modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% du haut et centré */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largeur du modal */
+    max-width: 500px; /* Largeur max du modal */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Le bouton pour fermer le modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Changer la couleur du bouton de fermeture au survol */
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
